@@ -3,10 +3,13 @@ package org.acme.quickstart.hibernate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.eclipse.microprofile.opentracing.Traced;
+
 /**
  * Produto
  */
 @Entity(name = "produto")
+@Traced
 public class Produto {
 
     @Id
